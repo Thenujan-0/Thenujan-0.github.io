@@ -1,0 +1,31 @@
+
+*{
+    margin:0;
+    font-family:sans-serif;
+}
+
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    h1{
+        margin:20px;
+    }
+
+    ul{
+        // padding-left:70%;
+        li{
+            display: inline;
+            margin:40px;
+        }
+    }
+}
+
+#introduction{
+    margin-top:30vh;
+    margin-left:10vw;
+    white-space: nowrap;
+    font-size:40px;
+}
