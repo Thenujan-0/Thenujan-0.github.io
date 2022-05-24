@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav h1 {
+  margin: 20px;
+}
+nav ul li {
+  display: inline;
+  margin: 40px;
+}
+
+#introduction {
+  margin-top: 30vh;
+  margin-left: 10vw;
+  white-space: nowrap;
+  font-size: 40px;
+}/*# sourceMappingURL=index.css.map */
