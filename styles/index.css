@@ -1,15 +1,20 @@
 * {
   margin: 0;
   font-family: sans-serif;
+  color: white;
 }
 
 nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative;
+  -webkit-animation: drop 1s;
+          animation: drop 1s;
 }
 nav h1 {
   margin: 20px;
+  color: #f90;
 }
 nav ul li {
   display: inline;
@@ -17,8 +22,68 @@ nav ul li {
 }
 
 #introduction {
-  margin-top: 30vh;
+  margin-top: 15vw;
   margin-left: 10vw;
   white-space: nowrap;
   font-size: 40px;
+  -webkit-animation: fade-in 2s;
+          animation: fade-in 2s;
+}
+#introduction span {
+  color: #f90;
+}
+@media screen and (max-width: 1000px) {
+  #introduction {
+    font-size: 30px;
+  }
+}
+
+@-webkit-keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes drop {
+  from {
+    top: -20px;
+  }
+  to {
+    top: 0;
+  }
+}
+@keyframes drop {
+  from {
+    top: -20px;
+  }
+  to {
+    top: 0;
+  }
+}
+.background-image {
+  height: 100vh;
+  width: 100%;
+}
+
+.image-container {
+  position: absolute;
+  background: url("../images/background2.jpg") no-repeat;
+  background-size: cover;
+  z-index: -1;
+  filter: brightness(50%);
+}
+
+#projects {
+  margin-top: 100vh;
 }/*# sourceMappingURL=index.css.map */
