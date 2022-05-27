@@ -5,9 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/index.css">
+    <?php
+    include("partials/header.php")
+    ?>
+    <script src="js/index.js"></script>
     <title>Thenujan</title>
 </head>
+
 <body>
+    <div class="loading-screen">
+        <div class="loading-wrapper">
+            <h1>Loading</h1>
+            <div class="circles">
+                <i class="fa-solid fa-circle"></i>
+                <i class="fa-solid fa-circle"></i>
+                <i class="fa-solid fa-circle"></i>
+            </div>  
+        </div>  
+    </div>  
+
     <div class="background-image image-container"></div>    
 
     <div class="background-image">
@@ -33,8 +49,6 @@
         </div>
 
     </div>
-
-
-    
 </body>
+
 </html>
