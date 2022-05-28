@@ -23,7 +23,7 @@
             </div>  
         </div>  
     </div>  
-
+    
     <div class="background-image image-container"></div>    
 
     <div class="background-image">
@@ -44,6 +44,7 @@
     
 
     <div id="projects">
+        <h1>My favourite projects</h1>
         <div id="grub-editor">
             <img src="images/grub-editor.png">
         </div>
