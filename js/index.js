@@ -5,7 +5,7 @@ $(window).on("load",()=>{
 
 
     $(".btnView").click(()=>{
-        window.location.href="http://thenujan.000webhostapp.com/"
+        window.location.href="https://grub-editor.herokuapp.com/"
     })
 })
 
