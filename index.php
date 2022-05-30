@@ -46,7 +46,15 @@
     <div id="projects">
         <h1>My favourite projects</h1>
         <div id="grub-editor">
-            <img src="images/grub-editor.png">
+            <h1>Grub Editor</h1>
+            <p> It is a GUI application to edit grub configuration</p>
+            <div class="imageContainer">
+                <img src="images/grub-editor.png">
+                <div class="btnView">
+                    <p>View</p>
+                </div>
+            </div>
+            
         </div>
 
     </div>
