@@ -56,6 +56,17 @@
             </div>
             
         </div>
+        <div id="pava-hub">
+            <h1>PavaHub</h1>
+            <p> This one doesn't need explanation</p>
+            <div class="imageContainer">
+                <img src="images/grub-editor.png">
+                <div class="btnView">
+                    <p>View</p>
+                </div>
+            </div>
+            
+        </div>
 
     </div>
 </body>
