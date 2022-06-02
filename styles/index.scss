@@ -60,9 +60,10 @@ nav{
         display: inline-block;
         // width:;
         overflow:hidden;
-        animation:blink 1s infinite,type 10s infinite;
+        
         white-space:nowrap;
         margin:0;
+        margin-right:30px;
     }
 
     
@@ -76,25 +77,40 @@ nav{
 @keyframes blink{
     from{
         border-right:2px solid white;
+        margin-right:28px;
     }
     49%{
         border-right:2px solid white;
+        margin-right:28px;
+
     }
     50%{
         border-right:none;
+        margin-right:30px;
+
     }
     to{
         border-right:none;
+        margin-right:30px;
+
     }
 }
 
 @keyframes type{
     from{
-        max-width:0;
+        max-width:0%;
     }
-    30%{
+    20%{
         max-width:100%;
     }
+}
+
+.type-web{
+    animation:type 3s steps(4,end) infinite,blink 1s infinite ;
+}
+
+.type-software{
+    animation: type 3s steps(8,end) infinite,blink 1s infinite ;
 }
 
 .full-size{
