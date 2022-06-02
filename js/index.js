@@ -1,12 +1,18 @@
 
 $(window).on("load",()=>{
     console.log("ready")
-    $(".loading-screen").remove()
+    
 
+    let start=()=>{
+        $(".loading-screen").remove()
 
-    $(".btnView").click(()=>{
-        window.location.href="https://grub-editor.herokuapp.com/"
-    })
+        $("#introduction").addClass("fade-in-animation")
+        $("nav").addClass("drop-animation")
+    }
+
+    //give 330ms for firefox to get ready
+    setTimeout(start,600)
+
 })
 
 

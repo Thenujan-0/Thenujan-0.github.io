@@ -1,6 +1,6 @@
 .loading-screen{
     position:fixed;
-    z-index:1;
+    z-index:4;
     min-height:100vh;
     min-width:100vw;
     display: flex;
@@ -55,19 +55,37 @@
 
 
 
-@keyframes jump{
-    from{
-        top:0;
-    }
-    20%{
-        top:-20px;
-    }
-    40%{
-        top:0;
+.circle{
+    $size:15px;
+    height:$size;
+    width:$size;
+    border-radius: 50%;
+    background:#f90;
 
+}
+
+@keyframes fade-in{
+    from{
+        opacity:0;
     }
     to{
-        top:0;
-
+        opacity:1;
     }
+}
+
+
+@keyframes drop{
+    from{
+        top:-20px;
+    }
+    to{
+        top:0
+    }
+}
+.fade-in-animation{
+    animation: fade-in 2s;
+}
+
+.drop-animation{
+    animation:drop 1s;
 }
