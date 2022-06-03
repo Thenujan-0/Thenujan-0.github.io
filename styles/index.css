@@ -1,0 +1,293 @@
+.loading-screen {
+  position: fixed;
+  z-index: 4;
+  min-height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #333;
+}
+
+.loading-wrapper {
+  display: flex;
+  justify-content: center;
+}
+.loading-wrapper h1, .loading-wrapper i {
+  color: #f90;
+}
+.loading-wrapper h1 {
+  margin: 10px;
+  font-size: 50px;
+}
+.loading-wrapper .circles {
+  display: flex;
+}
+.loading-wrapper .circles i {
+  display: inline;
+  margin: 3px;
+  margin-top: 40px;
+  position: relative;
+  -webkit-animation: jump 2s linear 0s infinite;
+          animation: jump 2s linear 0s infinite;
+}
+.loading-wrapper .circles i:nth-child(2) {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+.loading-wrapper .circles i:nth-child(3) {
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+}
+
+.circle {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background: #f90;
+}
+
+@-webkit-keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes drop {
+  from {
+    top: -20px;
+  }
+  to {
+    top: 0;
+  }
+}
+@keyframes drop {
+  from {
+    top: -20px;
+  }
+  to {
+    top: 0;
+  }
+}
+.fade-in-animation {
+  -webkit-animation: fade-in 2s;
+          animation: fade-in 2s;
+}
+
+.drop-animation {
+  -webkit-animation: drop 1s;
+          animation: drop 1s;
+}
+
+* {
+  margin: 0;
+  font-family: sans-serif;
+  color: white;
+}
+
+body {
+  background: #393939;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+nav h1 {
+  margin: 20px;
+  color: #f90;
+  font-size: 30px;
+}
+nav ul li {
+  display: inline;
+  margin: 40px;
+}
+
+#introduction {
+  margin-top: 15vw;
+  margin-left: 10vw;
+  white-space: nowrap;
+  font-size: 40px;
+}
+#introduction h1 {
+  font-size: 60px;
+}
+#introduction span.name {
+  color: #f90;
+}
+#introduction .container {
+  display: flex;
+  flex-direction: row;
+}
+#introduction .container h1:nth-child(1) {
+  margin-right: 30px;
+}
+#introduction h1.dev-title {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0;
+  margin-right: 30px;
+}
+@media screen and (max-width: 1000px) {
+  #introduction {
+    font-size: 30px;
+  }
+}
+
+@-webkit-keyframes blink {
+  from {
+    border-right: 2px solid white;
+    margin-right: 28px;
+  }
+  49% {
+    border-right: 2px solid white;
+    margin-right: 28px;
+  }
+  50% {
+    border-right: none;
+    margin-right: 30px;
+  }
+  to {
+    border-right: none;
+    margin-right: 30px;
+  }
+}
+
+@keyframes blink {
+  from {
+    border-right: 2px solid white;
+    margin-right: 28px;
+  }
+  49% {
+    border-right: 2px solid white;
+    margin-right: 28px;
+  }
+  50% {
+    border-right: none;
+    margin-right: 30px;
+  }
+  to {
+    border-right: none;
+    margin-right: 30px;
+  }
+}
+@-webkit-keyframes type {
+  from {
+    max-width: 0%;
+  }
+  20% {
+    max-width: 100%;
+  }
+}
+@keyframes type {
+  from {
+    max-width: 0%;
+  }
+  20% {
+    max-width: 100%;
+  }
+}
+.type-web {
+  -webkit-animation: type 3s steps(4, end) infinite, blink 1s infinite;
+          animation: type 3s steps(4, end) infinite, blink 1s infinite;
+}
+
+.type-software {
+  -webkit-animation: type 3s steps(8, end) infinite, blink 1s infinite;
+          animation: type 3s steps(8, end) infinite, blink 1s infinite;
+}
+
+.full-size {
+  height: 100vh;
+  width: 100%;
+}
+
+.section1 {
+  position: relative;
+  z-index: 3;
+}
+
+.image-container {
+  position: absolute;
+  background: url("../images/background2.png") no-repeat;
+  background-size: cover;
+  filter: brightness(70%);
+}
+
+.image-overlay-container {
+  position: absolute;
+}
+
+#projects h1 {
+  text-align: center;
+  margin: 50px auto;
+  font-size: 40px;
+}
+#projects p {
+  text-align: center;
+}
+#projects div.project {
+  border-top: 10px #00f444 solid;
+  border-bottom: 10px #00f444 solid;
+  display: flex;
+  flex-direction: column;
+}
+#projects div.project h1 {
+  font-size: 30px;
+  margin: 20px;
+}
+#projects div.project a {
+  display: block;
+}
+#projects div.project img {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 60%;
+  transition: all 0.5s;
+}
+#projects div.project .imageContainer {
+  border: none;
+  position: relative;
+}
+#projects div.project .btnView {
+  opacity: 0;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border: none;
+  width: 100px;
+  height: 100px;
+  background: #333;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+  filter: drop-shadow(2px 4px 7px black);
+}
+#projects div.project .btnView:hover {
+  background: #222;
+}
+#projects div.project .btnView p {
+  font-size: 24px;
+}
+#projects div.project div.imageContainer:hover div.btnView {
+  opacity: 1;
+}/*# sourceMappingURL=index.css.map */
