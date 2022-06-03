@@ -12,6 +12,7 @@ $(window).on("load",()=>{
     //give 330ms for firefox to get ready
     setTimeout(start,600)
 
+    //Typing animation change text
     $("h1.dev-title").addClass("type-web")
     console.log("added web")
         let changeDevTitle=()=>{
@@ -27,6 +28,21 @@ $(window).on("load",()=>{
             }
         }
         setInterval(changeDevTitle,3000)
+    
+    //Scroll down icon on section 1
+    let downIcon= $("i.down-icon")
+    let section2Top = $(".section2").offset().top
+    
+    downIcon.click(()=>{
+        console.log(downIcon.offset())
+        $([document.documentElement,document.body]).animate({scrollTop:section2Top},2000)
+    })
+
+    
+
+
+    
+
 
 })
 

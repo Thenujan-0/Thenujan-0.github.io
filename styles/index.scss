@@ -1,5 +1,8 @@
 @import "loading";
 @import "components";
+
+$base-color:#f90;
+
 *{
     margin:0;
     font-family:sans-serif;
@@ -44,7 +47,7 @@ nav{
     }
 
     span.name{
-        color:#f90;
+        color:$base-color;
     }
 
     .container{
@@ -141,7 +144,27 @@ nav{
 
 
 
+i.down-icon{
+    position:absolute;
+    color:$base-color;
+    left:50%;
+    bottom:1%;
+    cursor:pointer;
+    z-index:4;
+    animation: icon-bounce 1s infinite;
+}
 
+@keyframes icon-bounce{
+    from{
+        bottom:1%;
+    }
+    50%{
+        bottom:2%;
+    }
+    to{
+        bottom:1%;
+    }
+}
 
 
 #projects{
@@ -177,9 +200,7 @@ nav{
             transform: translateX(-50%);
             max-width: 60%;
             transition: all 0.5s;
-            &:hover{
-                // transform:translateX(-50%) scale(1.02);
-            }
+            
         }
         .imageContainer{
             border:none;

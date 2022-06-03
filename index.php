@@ -48,9 +48,10 @@
         </div>  
         
     </div>
+    <i class="fa-solid fa-angles-down fa-2x down-icon"></i>
     
 
-    <div id="projects">
+    <div id="projects" class="section2">
         <h1>My favourite projects</h1>
         <div id="grub-editor" class="project">
             <h1>Grub Editor</h1>

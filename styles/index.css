@@ -232,6 +232,40 @@ nav ul li {
   position: absolute;
 }
 
+i.down-icon {
+  position: absolute;
+  color: #f90;
+  left: 50%;
+  bottom: 1%;
+  cursor: pointer;
+  z-index: 4;
+  -webkit-animation: icon-bounce 1s infinite;
+          animation: icon-bounce 1s infinite;
+}
+
+@-webkit-keyframes icon-bounce {
+  from {
+    bottom: 1%;
+  }
+  50% {
+    bottom: 2%;
+  }
+  to {
+    bottom: 1%;
+  }
+}
+
+@keyframes icon-bounce {
+  from {
+    bottom: 1%;
+  }
+  50% {
+    bottom: 2%;
+  }
+  to {
+    bottom: 1%;
+  }
+}
 #projects h1 {
   text-align: center;
   margin: 50px auto;
