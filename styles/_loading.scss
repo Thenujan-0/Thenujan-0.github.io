@@ -89,3 +89,18 @@
 .drop-animation{
     animation:drop 1s;
 }
+
+@keyframes jump{
+    from{
+        top:0;
+    }
+    20%{
+        top:-20px;
+    }
+    40%{
+        top:0;
+    }
+    to{
+        top:0;
+    }
+}

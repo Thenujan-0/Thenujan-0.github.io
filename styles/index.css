@@ -90,6 +90,35 @@
           animation: drop 1s;
 }
 
+@-webkit-keyframes jump {
+  from {
+    top: 0;
+  }
+  20% {
+    top: -20px;
+  }
+  40% {
+    top: 0;
+  }
+  to {
+    top: 0;
+  }
+}
+
+@keyframes jump {
+  from {
+    top: 0;
+  }
+  20% {
+    top: -20px;
+  }
+  40% {
+    top: 0;
+  }
+  to {
+    top: 0;
+  }
+}
 * {
   margin: 0;
   font-family: sans-serif;
