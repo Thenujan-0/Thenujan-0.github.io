@@ -6,6 +6,7 @@ $base-color:#f90;
 *{
     margin:0;
     font-family:sans-serif;
+    box-sizing: border-box;
     color:white;
 }
 
@@ -22,28 +23,63 @@ nav{
     h1{
         margin:20px;
         color:#f90;
-        font-size:30px;
+        font-size:clamp(16px,3vw,30px);
+        cursor:pointer;
+
+        // @media screen and(max-width:720px) {
+        //     font-size: 23px;
+        // }
+        // @media screen and(max-width:480px){
+        //     margin:5px;
+        //     font-size:16px;
+        // }
     }
 
     ul{
         // padding-left:70%;
         li{
             display: inline;
-            margin:40px;
+            margin:clamp(5px,1vw,20px);
+            font-size:clamp(14px,1vw,18px);
+            // @media screen and(max-width:720px) {
+            //     margin:20px;
+            // }
+
+            // @media screen and(max-width:480px){
+            //     margin:5px;
+            //     font-size: 14px;;
+
+                
+            // }
+
+            a{
+                cursor: pointer;
+                padding:clamp(2px,1vw,10px);
+                border-radius:8px;
+
+
+
+                &:hover{
+                    background:white;
+                    color:black;
+                }
+            }
             
         }
     }
 }
 
 #introduction{
-    margin-top:15vw;
     margin-left:10vw;
+    position:relative;
+    top:50%;
+    transform: translateY(-100%);
     white-space: nowrap;
     font-size:40px;
     // animation:fade-in 2s;
 
     h1{
-        font-size:60px;
+        font-size: clamp(16px,7vw,60px);
     }
 
     span.name{
@@ -54,47 +90,57 @@ nav{
         display: flex;
         flex-direction: row;
 
-        h1:nth-child(1){
-            margin-right:30px;
-        }
+        // h1:nth-child(1){
+        //     margin-right:30px;
+        // }
     }
 
-    h1.dev-title{
-        display: inline-block;
-        // width:;
-        overflow:hidden;
-        
+    span.dev-title {
         white-space:nowrap;
         margin:0;
-        margin-right:30px;
+        animation:blink 1s infinite;
     }
 
     
 
-    @media screen and(max-width:1000px){
-        font-size:30px;
-        // margin-top:
-    }
+    // @media screen and(max-width:1000px){
+    //     h1{
+    //         font-size:40px;
+    //     }
+    //     // margin-top:
+    // }
+
+    // @media screen and(max-width:480px){
+    //     h1{
+    //         font-size:30px;
+    //     }
+    // }
+
+    // @media screen and (max-width:360px) {
+    //     h1{
+    //         font-size: 23px;;
+    //     }
+    // }
 }
 
 @keyframes blink{
     from{
         border-right:2px solid white;
-        margin-right:28px;
+        margin-right:0;
     }
     49%{
         border-right:2px solid white;
-        margin-right:28px;
+        margin-right:0;
 
     }
     50%{
         border-right:none;
-        margin-right:30px;
+        margin-right:2px;
 
     }
     to{
         border-right:none;
-        margin-right:30px;
+        margin-right:2px;
 
     }
 }
@@ -108,13 +154,18 @@ nav{
     }
 }
 
-.type-web{
-    animation:type 3s steps(4,end) infinite,blink 1s infinite ;
-}
+// .type-web{
+//     animation:type 3s steps(4,end) infinite,blink 1s infinite ;
+// }
 
-.type-software{
-    animation: type 3s steps(8,end) infinite,blink 1s infinite ;
-}
+// .type-software{
+//     animation: type 3s steps(8,end) infinite,blink 1s infinite ;
+// }
+
+
+// .type-web{
+//     animation:blink 1s infinite;
+// }
 
 .full-size{
     height:100vh;
@@ -133,6 +184,7 @@ nav{
     position: absolute;
     background:url("../images/background2.png")  no-repeat;
     background-size:cover;
+    background-position:80% ;
     // z-index:1;
     filter:brightness(70%); 
 }
@@ -173,7 +225,7 @@ i.down-icon{
 
     h1{
         text-align:center;
-        margin:50px auto;
+        padding:50px 0;
         font-size:40px;
     }
     p{
@@ -188,7 +240,7 @@ i.down-icon{
 
         h1{
             font-size:30px;
-            margin:20px;
+            padding:20px;
         }
         a{
             display: block;

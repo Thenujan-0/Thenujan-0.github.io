@@ -39,11 +39,7 @@
         <div id="introduction">
             <h1>Hi, i'm <span class="name">Thenujan</span></h1>
             <div class="container">
-                <h1>I'm a </h1>
-                <div>
-                    <h1 class="dev-title">web</h1>
-                </div>
-                <h1> developer</h1>
+                <h1>I'm a <span class="dev-title"></span> developer</h1>
             </div>
         </div>  
         
@@ -65,8 +61,8 @@
             
         </div>
         <div id="pava-hub" class="project">
-            <h1>PavaHub</h1>
-            <p> This one doesn't need explanation</p>
+            <h1>Wayfire</h1>
+            <p>A mockup for a tech shop website</p>
             <div class="imageContainer">
                 <img src="images/grub-editor.png">
                 <div class="btnView">
